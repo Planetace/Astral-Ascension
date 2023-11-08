@@ -1,0 +1,4 @@
+command,class,tags,syntax,help
+
+# Astral Set Market Size, allows you to set market sizes above 10, because Console Commands didn't expect players to actually have planet sizes ranging between 11-100.
+AstralSetMarketSize,data.console.commands.AstralSetMarketSize,"AstralAssembly,cheat,market",AstralSetMarketSize (size),"Astral Assembly version of market size change. Allows increases between or at One to One-Hundred."

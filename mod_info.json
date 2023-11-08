@@ -1,0 +1,11 @@
+{
+  "id": "Planetace_AstralAscensions",
+  "name": "Astral Ascensions",
+  "author": "Planetace / OmegaEntertainment",
+  "utility": "true",
+  "version": "1.2",
+  "description": "Adds additional market sizes all the way up to one-hundred - a googol of people. Features unique descriptions, icons, and eldritch insanity.",
+  "gameVersion": "0.96a-RC10",
+  "jars":["jars/astralAscension.jar"],
+  "modPlugin":"planetace.astralAscension.AstralModPlugin",
+}

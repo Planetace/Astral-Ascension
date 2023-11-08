@@ -1,0 +1,35 @@
+{
+  # Max Industires does NOT work with the higher market sizes, probably because it's internal handling script cannot actually comprehend that there is more than 10 market sizes.
+  # Fixing this would probably require rewriting something that could easily break the game. I haven't checked - Planetace.
+  "maxIndustries":[1,1,1,2,3,4,4,5,5,6],
+  "overMaxIndustriesPenalty": 5,
+  "maxColonySize": 100,
+
+  # Omega Core Officer Chance, default value is 0.0.
+  # Modify this to increase or decrease the chance.
+  "drop_prob_officer_omega_core": 0.0,
+
+
+  # Allows Larger AI fleets and more officers.
+  #"maxShipsInAIFleet":50,
+  #"maxOfficersInAIFleet":20,
+
+  # Debug values, causes colonies to quite literally develop at the same pace as a Dyson Sphere entirely filled with completely immortal humans undergoing mitosis to each other every attosecond.
+  # No seriously, this is lore and gameplay breaking. DO NOT USE THIS UNLESS YOU WANT TO BECOME A JUGGERNAUT!
+  #"immigrationIncentiveCostPerPoint": 0,
+  #"immigrationIncentivePointsAboveHazardPenalty": 2140000000,
+
+  # Accessability Debug values. Because large markets suffer from limited exporting, this just makes it so you can flood your entire empire (not the sector) with stellar system sized quantities of food and choco-lava.
+  #"accessibilitySameFactionBonus":1000,
+
+  "graphics": {
+    "planets": {
+        "Ecumonopolis": "graphics/planets/AA_Ecumonopolis.jpg",
+        "FullEcumonopolis": "graphics/planets/AA_fullEcumonopolis.jpg",
+        "HyperEcumonopolis": "graphics/planets/AA_hyperEcumonopolis.jpg",
+        "Matrioshka": "graphics/planets/AA_matrioshka.jpg",
+        "Matrioshka Layer": "graphics/planets/AA_matrioshkaLayer.png",
+        "Astral Singularity": "graphics/planets/AA_astral.jpg",
+    },
+  }
+}
