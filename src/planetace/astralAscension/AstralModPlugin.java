@@ -1,32 +1,36 @@
 package planetace.astralAscension;
 
-import com.fs.starfarer.api.BaseModPlugin;
+// Vanilla stuff for the plugin.
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.BaseModPlugin;
 
-import planetace.astralAscension.AA_ColonyGraphicsSwitch;
+// Import plugins from the rest of the mod.
+import planetace.astralAscension.campaign.econ.ColonyRebuilder;
+import planetace.astralAscension.campaign.AA_CampaignListener;
+import planetace.astralAscension.campaign.AA_OmegaCoreCampaignImpl;
 
 
 public class AstralModPlugin extends BaseModPlugin {
-    @Override
-    public void onApplicationLoad() throws Exception {
-        super.onApplicationLoad();
-    }
 
     @Override
-    public void onNewGame() {
-        // PLEASE FOR THE LOVE OF GOD, DON'T FUCKING ENABLE THIS ON PUBLIC RELEASE - Past Planetace.
-        System.out.println(">:3 I'm a silly billy - Planetace");
-    }
+    public void onApplicationLoad() {}
 
+    // Only use for "Once and Done" things, like generating star systems.
+    @Override
+    public void onNewGame() { }
+
+    // Loads Stuff after the game has generated the Sector and all markets. Useful for applying values to planets which need other values from themselves.
+    @Override
+    public void onNewGameAfterEconomyLoad() { }
+
+    // Loads every time you open a save. THIS INCLUDES WHEN GENERATING A NEW GAME.
     @Override
     public void onGameLoad(boolean newGame) {
-        try {
-            // Try and load in an Economy Update Listener, specifically the Colony Graphics Switch which detects colony size.
-            // We need this to switch graphics for higher tier colonies.
-            Global.getSector().getEconomy().addUpdateListener(new AA_ColonyGraphicsSwitch());
-        } catch(Exception e) {
-            // Exception handling.
-            System.out.println("Couldn't activate Graphics Switch Class Successfully.");
-        }
+        Global.getSector().registerPlugin(new AA_OmegaCoreCampaignImpl());
+        Global.getSector().getEconomy().addUpdateListener(new ColonyRebuilder());
+        Global.getSector().addListener(new AA_CampaignListener());
+
+        // Luna-lib Settings Support. Changes settings 'in-game' everytime a game is loaded.
+        new AA_LunaLibSettings().AA_LunaLibMethod();
     }
 }

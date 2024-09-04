@@ -1,4 +1,13 @@
 name,id,planetary,decivRemove,script,desc,icon,order
+
+# PLANET TYPE MARKET CONDITIONS
+Partial Ecumenopolis,AA_partial_ecumenopolis,TRUE,,planetace.astralAscension.campaign.conditions.AA_condition_partial_ecumenopolis,	"Unfathomably vast cities span across continents. While $market is not fully encased under industrial and urban sprawl, the rampant growth has offered conditions sustainable for insane numbers of human life deep within the walls of the cities. Luddites may cry, but your investors are beaming.",graphics/icons/markets/partial_ecumenopolis.png,2380
+Ecumenopolis,AA_ecumenopolis,TRUE,,planetace.astralAscension.campaign.conditions.AA_condition_ecumenopolis,"Concrete, Asphalt, Plastic and Rebar. Those are the four most common materials found in $market’s crust. Arcologies kilometers tall span the breadth of conventional cities. While the entirety of the upper crust has been paved over into a concrete jungle. May Ludd weap for what has been lost…",graphics/icons/markets/ecumenopolis.png,2381
+Hyperspacial Ecumenopolis,AA_hyperspacial_ecumenopolis,TRUE,,planetace.astralAscension.campaign.conditions.AA_condition_hyperspacial_ecumenopolis,"Without adequate space to expand, and the orbitals needing to be clear for the time being, advances in Hyperspacial folding have given $market the capacity to host a population a hundred-fold to a conventional Ecumonopolis. Despite the living space, there are whispers of… things, in the many multi-dimensional corners of this world.",graphics/icons/markets/hyperspacial_ecumenopolis.png,2382
+Matrioshka World,AA_matrioshka_world,TRUE,,planetace.astralAscension.campaign.conditions.AA_condition_matrioshka_world,"Orbital infrastructure has caught up, and even better, has managed to solve yet another issue related to overpopulation. $market is now a world upon worlds. Layers upon layers of stacked biomes both conventional and bizarre. Despite the hazards of dimensional tech, the Matrioshka World offers enough free space to have safe zones free of ‘accidents’.",graphics/icons/markets/matrioshka_world.png,2383
+Astral World,AA_astral_world,TRUE,,planetace.astralAscension.campaign.conditions.AA_condition_astral_world,"The greatest achievement of human civilisation. $market isn’t a world, but a wormhole Nexus connected to a nascent Basement Universe. With the conditions of this reality tailored for human use, there will be no opposition for your future colonisation plans… hopefully.",graphics/icons/markets/astral_world.png,2384
+
+# POPULATION MARKET CONDITIONS
 Population,population_11,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market has surpassed Old Earth by an entire order of magnitude, playing host to a population in the hundreds of billions.",graphics/icons/markets/population11.png,2300
 Population,population_12,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market has become a Sector-wide hub of trade and military might, housing a trillion souls upon its surface and within a network of orbital satellites.",graphics/icons/markets/population12.png,2301
 Population,population_13,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market safeguards tens of trillions of souls, a raised shield against the storm of an entire galactic arm's hatred.",graphics/icons/markets/population13.png,2302
@@ -47,63 +56,63 @@ Population,population_49,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Populatio
 
 # Size 50+
 Population,population_50,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Quindecillion souls.",graphics/icons/markets/population50.png,2339
-Population,population_51,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Sexdecillion souls.",graphics/icons/markets/population50.png,2330
-Population,population_52,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Sexdecillion souls.",graphics/icons/markets/population50.png,2331
-Population,population_53,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Sexdecillion souls.",graphics/icons/markets/population50.png,2332
-Population,population_54,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Septendecillion souls.",graphics/icons/markets/population50.png,2333
-Population,population_55,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Septendecillion souls.",graphics/icons/markets/population50.png,2334
-Population,population_56,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Septendecillion souls.",graphics/icons/markets/population50.png,2335
-Population,population_57,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Octodecillion souls.",graphics/icons/markets/population50.png,2336
-Population,population_58,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Octodecillion souls.",graphics/icons/markets/population50.png,2337
-Population,population_59,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Octodecillion souls.",graphics/icons/markets/population50.png,2338
+Population,population_51,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Sexdecillion souls.",graphics/icons/markets/population50.png,2340
+Population,population_52,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Sexdecillion souls.",graphics/icons/markets/population50.png,2341
+Population,population_53,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Sexdecillion souls.",graphics/icons/markets/population50.png,2342
+Population,population_54,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Septendecillion souls.",graphics/icons/markets/population50.png,2343
+Population,population_55,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Septendecillion souls.",graphics/icons/markets/population50.png,2344
+Population,population_56,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Septendecillion souls.",graphics/icons/markets/population50.png,2345
+Population,population_57,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Octodecillion souls.",graphics/icons/markets/population50.png,2346
+Population,population_58,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Octodecillion souls.",graphics/icons/markets/population50.png,2347
+Population,population_59,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Octodecillion souls.",graphics/icons/markets/population50.png,2348
 
 # Size 60+
-Population,population_60,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Novemdecillion souls. This number sounds familiar, like a certain bakery that lies just off the tip of your tongue.",graphics/icons/markets/population60.png,2339
-Population,population_61,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Novemdecillion souls.",graphics/icons/markets/population60.png,2330
-Population,population_62,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Novemdecillion souls.",graphics/icons/markets/population60.png,2331
-Population,population_63,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Vigintillion souls.",graphics/icons/markets/population60.png,2332
-Population,population_64,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Vigintillion souls.",graphics/icons/markets/population60.png,2333
-Population,population_65,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Vigintillion souls.",graphics/icons/markets/population60.png,2334
-Population,population_66,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Unvigintillion souls.",graphics/icons/markets/population60.png,2335
-Population,population_67,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Unvigintillion souls.",graphics/icons/markets/population60.png,2336
-Population,population_68,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Unvigintillion souls.",graphics/icons/markets/population60.png,2337
-Population,population_69,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Duovigintillion souls.",graphics/icons/markets/population60.png,2338
+Population,population_60,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Novemdecillion souls. This number sounds familiar, like a certain bakery that lies just off the tip of your tongue.",graphics/icons/markets/population60.png,2349
+Population,population_61,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Novemdecillion souls.",graphics/icons/markets/population60.png,2350
+Population,population_62,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Novemdecillion souls.",graphics/icons/markets/population60.png,2351
+Population,population_63,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Vigintillion souls.",graphics/icons/markets/population60.png,2352
+Population,population_64,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Vigintillion souls.",graphics/icons/markets/population60.png,2353
+Population,population_65,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Vigintillion souls.",graphics/icons/markets/population60.png,2354
+Population,population_66,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Unvigintillion souls.",graphics/icons/markets/population60.png,2355
+Population,population_67,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Unvigintillion souls.",graphics/icons/markets/population60.png,2356
+Population,population_68,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Unvigintillion souls.",graphics/icons/markets/population60.png,2357
+Population,population_69,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Duovigintillion souls.",graphics/icons/markets/population60.png,2358
 
 # Size 70+
-Population,population_70,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Duovigintillion souls.",graphics/icons/markets/population70.png,2339
-Population,population_71,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Duovigintillion souls.",graphics/icons/markets/population70.png,2330
-Population,population_72,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Trevigintillion souls.",graphics/icons/markets/population70.png,2331
-Population,population_73,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Trevigintillion souls.",graphics/icons/markets/population70.png,2332
-Population,population_74,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Trevigintillion souls.",graphics/icons/markets/population70.png,2333
-Population,population_75,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2334
-Population,population_76,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2335
-Population,population_77,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2336
-Population,population_78,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Quinvigintillion souls.",graphics/icons/markets/population70.png,2337
-Population,population_79,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Quinvigintillion souls.",graphics/icons/markets/population70.png,2338
+Population,population_70,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Duovigintillion souls.",graphics/icons/markets/population70.png,2359
+Population,population_71,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Duovigintillion souls.",graphics/icons/markets/population70.png,2360
+Population,population_72,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Trevigintillion souls.",graphics/icons/markets/population70.png,2361
+Population,population_73,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Trevigintillion souls.",graphics/icons/markets/population70.png,23362
+Population,population_74,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Trevigintillion souls.",graphics/icons/markets/population70.png,2363
+Population,population_75,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2364
+Population,population_76,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2365
+Population,population_77,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Quattuorvigintillion souls.",graphics/icons/markets/population70.png,2366
+Population,population_78,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Quinvigintillion souls.",graphics/icons/markets/population70.png,2367
+Population,population_79,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Quinvigintillion souls.",graphics/icons/markets/population70.png,2368
 
 # Size 80+
-Population,population_80,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Quinvigintillion souls.",graphics/icons/markets/population80.png,2339
-Population,population_81,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Sexvigintillion souls.",graphics/icons/markets/population80.png,2330
-Population,population_82,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Sexvigintillion souls.",graphics/icons/markets/population80.png,2331
-Population,population_83,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Sexvigintillion souls.",graphics/icons/markets/population80.png,2332
-Population,population_84,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Septenvigintillion souls.",graphics/icons/markets/population80.png,2333
-Population,population_85,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Septenvigintillion souls.",graphics/icons/markets/population80.png,2334
-Population,population_86,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Septenvigintillion souls.",graphics/icons/markets/population80.png,2335
-Population,population_87,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Octovigintillion souls.",graphics/icons/markets/population80.png,2336
-Population,population_88,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Octovigintillion souls.",graphics/icons/markets/population80.png,2337
-Population,population_89,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Octovigintillion souls.",graphics/icons/markets/population80.png,2338
+Population,population_80,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Quinvigintillion souls.",graphics/icons/markets/population80.png,2369
+Population,population_81,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Sexvigintillion souls.",graphics/icons/markets/population80.png,2360
+Population,population_82,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Sexvigintillion souls.",graphics/icons/markets/population80.png,2361
+Population,population_83,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Sexvigintillion souls.",graphics/icons/markets/population80.png,2362
+Population,population_84,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Septenvigintillion souls.",graphics/icons/markets/population80.png,2363
+Population,population_85,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Septenvigintillion souls.",graphics/icons/markets/population80.png,2364
+Population,population_86,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Septenvigintillion souls.",graphics/icons/markets/population80.png,2365
+Population,population_87,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Octovigintillion souls.",graphics/icons/markets/population80.png,2366
+Population,population_88,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Octovigintillion souls.",graphics/icons/markets/population80.png,2367
+Population,population_89,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Octovigintillion souls.",graphics/icons/markets/population80.png,2368
 
 # Size 90+
-Population,population_90,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Novemvigintillion souls.",graphics/icons/markets/population90.png,2339
-Population,population_91,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Novemvigintillion souls.",graphics/icons/markets/population90.png,2330
-Population,population_92,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Novemvigintillion souls.",graphics/icons/markets/population90.png,2331
-Population,population_93,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Trigintillion souls.",graphics/icons/markets/population90.png,2332
-Population,population_94,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Trigintillion souls.",graphics/icons/markets/population90.png,2333
-Population,population_95,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Trigintillion souls.",graphics/icons/markets/population90.png,2334
-Population,population_96,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Untrigintillion souls.",graphics/icons/markets/population90.png,2335
-Population,population_97,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Untrigintillion souls.",graphics/icons/markets/population90.png,2336
-Population,population_98,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Untrigintillion souls.",graphics/icons/markets/population90.png,2337
-Population,population_99,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Duotrigintillion souls.",graphics/icons/markets/population90.png,2338
+Population,population_90,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Novemvigintillion souls.",graphics/icons/markets/population90.png,2369
+Population,population_91,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Novemvigintillion souls.",graphics/icons/markets/population90.png,2370
+Population,population_92,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Novemvigintillion souls.",graphics/icons/markets/population90.png,2371
+Population,population_93,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Trigintillion souls.",graphics/icons/markets/population90.png,2372
+Population,population_94,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Trigintillion souls.",graphics/icons/markets/population90.png,2373
+Population,population_95,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Trigintillion souls.",graphics/icons/markets/population90.png,2374
+Population,population_96,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Untrigintillion souls.",graphics/icons/markets/population90.png,2375
+Population,population_97,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over ten Untrigintillion souls.",graphics/icons/markets/population90.png,2376
+Population,population_98,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains over a hundred Untrigintillion souls.",graphics/icons/markets/population90.png,2377
+Population,population_99,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Duotrigintillion souls.",graphics/icons/markets/population90.png,2378
 
 # A Googol of People
-Population,population_100,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Googol souls. Well Done! This is literally the end, I have no more sizes to give, sorry that this probably took you the literal heat death of time to get here.",graphics/icons/markets/population100.png,2339
+Population,population_100,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$market Contains a Googol souls. Well Done! This is literally the end, I have no more sizes to give, sorry that this probably took you the literal heat death of time to get here.",graphics/icons/markets/population100.png,2379

@@ -1,18 +1,16 @@
 {
-  # Max Industires does NOT work with the higher market sizes, probably because it's internal handling script cannot actually comprehend that there is more than 10 market sizes.
-  # Fixing this would probably require rewriting something that could easily break the game. I haven't checked - Planetace.
-  "maxIndustries":[1,1,1,2,3,4,4,5,5,6],
-  "overMaxIndustriesPenalty": 5,
+
+  "maxIndustries":[1,1,2,2,3,4,4,5,5,6],
+  "overMaxIndustriesPenalty":5, # stability penalty
   "maxColonySize": 100,
+
+  # Carrying Capacity Settings. NOTE not used atm.
+  "baseCarryingCapacity": 10,
+  "minimumCarryingCapacity": 4,
 
   # Omega Core Officer Chance, default value is 0.0.
   # Modify this to increase or decrease the chance.
-  "drop_prob_officer_omega_core": 0.0,
-
-
-  # Allows Larger AI fleets and more officers.
-  #"maxShipsInAIFleet":50,
-  #"maxOfficersInAIFleet":20,
+  "drop_prob_officer_omega_core": 0.33,
 
   # Debug values, causes colonies to quite literally develop at the same pace as a Dyson Sphere entirely filled with completely immortal humans undergoing mitosis to each other every attosecond.
   # No seriously, this is lore and gameplay breaking. DO NOT USE THIS UNLESS YOU WANT TO BECOME A JUGGERNAUT!
@@ -24,12 +22,15 @@
 
   "graphics": {
     "planets": {
-        "Ecumonopolis": "graphics/planets/AA_Ecumonopolis.jpg",
-        "FullEcumonopolis": "graphics/planets/AA_fullEcumonopolis.jpg",
-        "HyperEcumonopolis": "graphics/planets/AA_hyperEcumonopolis.jpg",
-        "Matrioshka": "graphics/planets/AA_matrioshka.jpg",
+        "PartialEcumenopolis": "graphics/planets/AA_ecumenopolis.jpg",
+        "PartialEcumGlow": "graphics/planets/AA_partialEcumLights.png",
+        "Ecumenopolis": "graphics/planets/AA_fullEcumenopolis.jpg",
+        "EcumenopolisGlow": "graphics/planets/AA_ecumenopolisLights.png",
+        "HyperEcumenopolis": "graphics/planets/AA_hyperEcumenopolis.jpg",
+        "HyperspatialLeakage": "graphics/planets/AA_hyperspaceLeakage.png",
         "Matrioshka Layer": "graphics/planets/AA_matrioshkaLayer.png",
-        "Astral Singularity": "graphics/planets/AA_astral.jpg",
+        "Matrioshka Layer Two": "graphics/planets/AA_matrioshkaLayer2.png",
+        "Astral World": "graphics/planets/AA_astral.jpg",
     },
   }
 }

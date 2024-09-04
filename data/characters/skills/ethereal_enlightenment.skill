@@ -1,0 +1,18 @@
+{
+	"id":"ethereal_enlightenment",
+	"governingAptitude":"technology", # why not
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.ethereal_enlightenment$Level1"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.ethereal_enlightenment$Level2"},
+				{"type":"CHARACTER_STATS", "script":"planetace.astralAscension.campaign.skills.ethereal_enlightenment$Level3"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.ethereal_enlightenment$Level4"},
+			]
+		},
+	],
+}

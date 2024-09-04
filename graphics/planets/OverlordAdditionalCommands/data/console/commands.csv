@@ -1,0 +1,17 @@
+command,class,tags,syntax,help
+# Command: what the player enters to use your custom command
+# Class: points towards the command's script, which should implement BaseCommand
+# Tags: used by the Help command to find specific types of commands. Example tags:
+#  Console - system-level commands such as Help or Status, will work everywhere
+#  Campaign/Combat - this command only works in these contexts
+#  A mod-specific tag - include your mod as a tag so Help can differentiate them! The console mod uses the "core" tag, so please don't use that tag in your mod
+# Syntax: the syntax pattern for your command. <> denotes a required field, [] an optional one. Ex: "addcrew <amount> [optionalLevel]"
+# Help: what the player is shown when they enter "help <command>". The syntax line will be shown by help as well, so you don't need to include it again.
+#
+SpawnStableLocation,data.console.commands.SpawnStableLocation,"spawn,campaign",spawnstablelocation [optionalAtRandomLocation],"Spawns a stable location in the current star system."
+SpawnCryosleeper,data.console.commands.SpawnCryosleeper,"spawn,campaign",spawncryosleeper [optionalAtRandomLocation],"Spawns a Cryosleeper in the current star system."
+SpawnInactiveGate,data.console.commands.SpawnInactiveGate,"spawn,campaign",spawninactivegate [optionalAtRandomLocation],"Spawns an inactive gate in the current star system."
+SpawnRemnantNexus,data.console.commands.SpawnRemnantNexus,"spawn,campaign",spawnremnantnexus [optionalAtRandomLocation],"Spawns a Remnant Nexus with fleets in the current star system."
+SpawnCoronalShunt,data.console.commands.SpawnCoronalShunt,"spawn,campaign",spawncoronalshunt,"Spawns a Coronal Shunt in the current star system."
+SpawnPlanet,data.console.commands.SpawnPlanet,"spawn,campaign",spawnplanet [optionalName] [optionalSpecId],"Spawns a planet in the current star system, with optional name and spec id. Put multi word names in quotes."
+AddAdmin,data.console.commands.AddAdmin,"core,campaign",addadmin [optionalTier] [optionalFaction] [optionalName],"Adds an administrator to your fleet. You can optionally specify his or her tier (0-2), and faction (currently only affects name/portrait). If all of these are left empty, a tier 0 administrator of the player faction will be created."

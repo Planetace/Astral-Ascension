@@ -1,6 +1,6 @@
 {
-	"ecumonopolis":{
-		"name":"Lesser Ecumonopolis",
+	"partialecumenopolis":{
+		"name":"Lesser Ecumenopolis",
 		"tilt":-10,
 		"pitch":0,
 		"rotation":-3,
@@ -8,7 +8,7 @@
 		"atmosphereThickness":0.1,
 		"atmosphereThicknessMin":40,
 		"atmosphereColor":[150,150,145,130],
-		"texture":"graphics/planets/AA_Ecumonopolis.jpg",
+		"texture":"graphics/planets/AA_ecumenopolis.jpg",
 		"icon":"graphics/warroom/icon_planet.png",
 		"iconColor":[140,140,140,255],
 		"isStar":false,
@@ -16,9 +16,12 @@
 		"cloudTexture":"graphics/planets/clouds_banded01.png",
 		"cloudColor":[220,190,160,180],
 		"cloudRotation":-5,
+		"glowTexture":"graphics/planets/AA_partialEcumLights.png",
+		"glowColor": [255,255,255,255],
+		"useReverseLightForGlow": false,
 	},
-	"fullecumonopolis": {
-		"name":"Ecumonopolis",
+	"fullecumenopolis": {
+		"name":"Ecumenopolis",
 		"tilt":-10,
 		"pitch":0,
 		"rotation":-3,
@@ -26,7 +29,7 @@
 		"atmosphereThickness":0.1,
 		"atmosphereThicknessMin":60,
 		"atmosphereColor":[150,150,145,130],
-		"texture":"graphics/planets/AA_fullEcumonopolis.jpg",
+		"texture":"graphics/planets/AA_fullEcumenopolis.jpg",
 		"icon":"graphics/warroom/icon_planet.png",
 		"iconColor":[140,120,140,255],
 		"isStar":false,
@@ -35,8 +38,8 @@
 		"cloudColor":[220,190,160,180],
 		"cloudRotation":-5,
 	},
-	"hyperecumonopolis": {
-		"name":"Hyperspacial Ecumonopolis",
+	"hyperecumenopolis": {
+		"name":"Hyperspacial Ecumenopolis",
 		"tilt":-10,
 		"pitch":0,
 		"rotation":-3,
@@ -44,7 +47,7 @@
 		"atmosphereThickness":0.2,
 		"atmosphereThicknessMin":80,
 		"atmosphereColor":[130,0,255,200],
-		"texture":"graphics/planets/AA_hyperEcumonopolis.jpg",
+		"texture":"graphics/planets/AA_hyperEcumenopolis.jpg",
 		"icon":"graphics/warroom/icon_planet.png",
 		"iconColor":[75,50,100,255],
 		"isStar":false,
@@ -53,8 +56,8 @@
 		"cloudColor":[90,15,170,50],
 		"cloudRotation":-5,
 	},
-	"matrioshka": {
-		"name":"Matrioshka World",
+	"matrioshkaworld": {
+		"name":"Matrioshka",
 		"tilt":-10,
 		"pitch":0,
 		"rotation":-3,
@@ -62,17 +65,17 @@
 		"atmosphereThickness":0.2,
 		"atmosphereThicknessMin":100,
 		"atmosphereColor":[20,110,230,200],
-		"texture":"graphics/planets/AA_matrioshka.jpg",
+		"texture":"graphics/planets/terran.jpg",
 		"icon":"graphics/warroom/icon_planet.png",
-		"iconColor":[110,90,255,255],
+		"iconColor":[6,61,119,255],
 		"isStar":false,
 		"lightPosition":[-2,2,7],
 		"cloudTexture":"graphics/planets/AA_matrioshkaLayer.png",
 		"cloudColor":[255,255,255,255],
 		"cloudRotation":-5,
 	},
-	"astralsingularity": {
-		"name":"Astral Singularity",
+	"astralworld": {
+		"name":"Astral",
 		"tilt":-10,
 		"pitch":0,
 		"rotation":-3,
@@ -85,7 +88,7 @@
 		"iconColor":[110,90,255,255],
 		"isStar":false,
 		"lightPosition":[-2,2,7],
-		"cloudTexture":"graphics/planets/AA_matrioshkaLayer.png",
+		"cloudTexture":"graphics/planets/AA_astralStars.png",
 		"cloudColor":[0,0,0,0],
 		"cloudRotation":0,
 	}

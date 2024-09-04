@@ -1,0 +1,17 @@
+{
+	"id":"acumenious_oracle",
+	"governingAptitude":"technology", # why not
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.acumenious_oracle$Level1"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.acumenious_oracle$Level2"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.acumenious_oracle$Level3"},
+			]
+		},
+	],
+}

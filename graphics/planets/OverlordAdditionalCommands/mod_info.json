@@ -1,0 +1,10 @@
+{
+  "id":"console_overlord_additionalcommands",
+  "name":"Overlord's Additional Console Commands",
+  "author":"Overlord",
+  "utility":"true",
+  "version":"1.1",
+  "suppressVCUnsupported":true,
+  "description":"Adds several commands to the console mod.",
+  "gameVersion":"0.95a-RC14"
+}

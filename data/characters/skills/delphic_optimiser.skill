@@ -1,0 +1,18 @@
+{
+	"id":"delphic_optimiser",
+	"governingAptitude":"technology", # why not
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+			    {"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.delphic_optimiser$Level1"},
+			    {"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.delphic_optimiser$Level2"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.delphic_optimiser$Level3"},
+				{"type":"GOVERNED_OUTPOST", "script":"planetace.astralAscension.campaign.skills.delphic_optimiser$Level4"},
+			]
+		},
+	],
+}

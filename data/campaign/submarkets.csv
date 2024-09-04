@@ -1,0 +1,3 @@
+id,name,faction,desc,script,icon,order
+omega_repository,"Omega
+Repository",,"With the approval of an Omega-Core, you have been given the green-light to purchase Omega Armaments and Vessels. Your fleets will burn brighter than the nascent universe, shattering all those who dare oppose your Sovereignty.",planetace.astralAscension.campaign.econ.OmegaRepository,graphics/factions/omega_market.png,3000

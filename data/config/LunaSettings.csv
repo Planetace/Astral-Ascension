@@ -1,0 +1,4 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+AA_ColonySettings,Astral Ascension General Settings,Header,General Settings,,,,,Astral Ascension
+maxColonySize,Set maximum colony size,Int,100,,Set's the maximum Colony Size that you could achieve in-game (does not revert sizes for colonies already above the assigned value),3,100,Astral Ascension
+drop_prob_officer_omega_core,Set Omega core drop chance,Double,0.33,,Set's the chance of Omega-Cores dropping from Omega Ships,0,1,Astral Ascension
