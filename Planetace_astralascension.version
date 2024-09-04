@@ -1,13 +1,13 @@
 {
-  "masterVersionFile": "https://github.com/Planetace/Astral-Ascension",
+  "masterVersionFile": "https://github.com/Planetace/Astral-Ascension/Planetace_astralascension.version",
   "modName": "Planetace_AstralAscension",
   "modThreadId": 28273,
-  "directDownloadURL": "https://github.com/Planetace/Astral-Ascension/releases/download/Release/AstralAscension.zip",
+  "directDownloadURL": "https://github.com/Planetace/Astral-Ascension/releases/download/1.2.7/Astral.Ascension.1.2.7.zip",
 
   "modVersion":
     {
-      "major": 2,
-      "minor": 0,
-      "patch": 0
+      "major": 1,
+      "minor": 2,
+      "patch": 7
     },
 }
