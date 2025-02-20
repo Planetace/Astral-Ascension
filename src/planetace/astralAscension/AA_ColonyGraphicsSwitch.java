@@ -31,20 +31,23 @@ public class AA_ColonyGraphicsSwitch implements EconomyAPI.EconomyUpdateListener
     public void planetChanger(PlanetAPI planet, String typeID, String typeName, String texFilePath,
                               String cloudFilePath, Color cloudCol, Float thick, Integer thickMin, Integer cloudRot, Color atmoCol, Color iconCol) {
         // Changes Planet Type.
-        ((PlanetSpec) planet.getSpec()).planetType = typeID;
-        ((PlanetSpec) planet.getSpec()).name = typeName;
+        if (planet != null) {
 
-        // Changes Planet Spec, which is its graphics.
-        planet.getSpec().setTexture(texFilePath); // Texture Shit
-        planet.getSpec().setCloudTexture(cloudFilePath); // Cloud Shit
-        planet.getSpec().setCloudColor(cloudCol);
-        planet.getSpec().setAtmosphereThickness(thick);
-        planet.getSpec().setAtmosphereThicknessMin(thickMin);
-        planet.getSpec().setCloudRotation(cloudRot);
-        planet.getSpec().setAtmosphereColor(atmoCol);  // Atmosphere Shit
-        planet.getSpec().setIconColor(iconCol);  // Icon Shit
+            ((PlanetSpec) planet.getSpec()).planetType = typeID;
+            ((PlanetSpec) planet.getSpec()).name = typeName;
 
-        planet.applySpecChanges();  // Refresh Spec Changes.
+            // Changes Planet Spec, which is its graphics.
+            planet.getSpec().setTexture(texFilePath); // Texture Shit
+            planet.getSpec().setCloudTexture(cloudFilePath); // Cloud Shit
+            planet.getSpec().setCloudColor(cloudCol);
+            planet.getSpec().setAtmosphereThickness(thick);
+            planet.getSpec().setAtmosphereThicknessMin(thickMin);
+            planet.getSpec().setCloudRotation(cloudRot);
+            planet.getSpec().setAtmosphereColor(atmoCol);  // Atmosphere Shit
+            planet.getSpec().setIconColor(iconCol);  // Icon Shit
+
+            planet.applySpecChanges();  // Refresh Spec Changes.
+        }
     }
 
     // Update Script, checks when market economy updates to see if it's size has reaches a milestone.

@@ -86,159 +86,157 @@ public class AA_ColonyRebuilder implements EconomyAPI.EconomyUpdateListener {
         for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()) {
             // We assign the planet API to the market planet entity.
             PlanetAPI planet = market.getPlanetEntity();
+            if (planet != null) {
 
-            // Lesser Ecumonopolis
-            // Continent spanning cities, but not entirely planet covering.
-            if (market.getSize() >= 11 && market.getSize() <= 12) {
 
-                // We change the planet's appearance. Does a check before-hand.
-                if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_ecumenopolis.jpg")) {
-                    //log.debug("Already has Lesser Ecumonopolis texture, not changing.");
-                    break;
+                // Lesser Ecumonopolis
+                // Continent spanning cities, but not entirely planet covering.
+                if (market.getSize() >= 11 && market.getSize() <= 12) {
+
+                    // We change the planet's appearance. Does a check before-hand.
+                    if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_ecumenopolis.jpg")) {
+                        //log.debug("Already has Lesser Ecumonopolis texture, not changing.");
+                        break;
+                    } else {
+                        log.debug("Changing to lesser Ecumenopolis.");
+
+                        // Refreshes condition
+                        conditionsRemove(market);
+                        market.addCondition("AA_partial_ecumenopolis");
+                        market.addCondition("pollution");
+
+                        // testing glow shit
+                        planet.getSpec().setUseReverseLightForGlow(false);
+                        planet.getSpec().setGlowTexture("graphics/planet/AA_partialEcumLights.png");
+                        planet.getSpec().setGlowColor(new Color(255, 255, 255, 255));
+
+                        // PlanetAPI, planetType ID, planet type name, Texture Path's for texture and clouds,
+                        // Colour for clouds, Clouds thickness, Colour for Atmosphere,
+                        // Shield Texture, Shield thickness, Shield Colour, and Icon Colour.
+                        planetChanger(planet,
+                                "partialecumenopolis",
+                                "Lesser Ecumenopolis",
+                                "graphics/planets/AA_ecumenopolis.jpg",
+                                "graphics/planets/AA_partialEcumLights.png",
+                                new Color(255, 255, 255, 255),
+                                "graphics/planets/clouds_banded01.png",
+                                new Color(220, 190, 160, 180), 0.1f, 40, -5,
+                                new Color(150, 150, 145, 130),
+                                null, null, null,
+                                new Color(140, 140, 140, 255));
+
+                    }
                 }
-                else {
-                    log.debug("Changing to lesser Ecumenopolis.");
 
-                    // Refreshes condition
-                    conditionsRemove(market);
-                    market.addCondition("AA_partial_ecumenopolis");
-                    market.addCondition("pollution");
+                // Full Ecumenopolis
+                // A city spanning the world, every trace of nature is paved over for human expansion.
+                else if (market.getSize() >= 13 && market.getSize() <= 14) {
+                    if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_fullEcumenopolis.jpg")) {
+                        //log.debug("Already has Ecumenopolis texture, not changing.");
+                        break;
+                    } else {
+                        log.debug("Changing to Ecumenopolis");
 
-                    // testing glow shit
-                    planet.getSpec().setUseReverseLightForGlow(false);
-                    planet.getSpec().setGlowTexture("graphics/planet/AA_partialEcumLights.png");
-                    planet.getSpec().setGlowColor(new Color(255,255,255,255));
+                        conditionsRemove(market);
+                        market.addCondition("AA_ecumenopolis");
+                        market.addCondition("pollution");
 
-                    // PlanetAPI, planetType ID, planet type name, Texture Path's for texture and clouds,
-                    // Colour for clouds, Clouds thickness, Colour for Atmosphere,
-                    // Shield Texture, Shield thickness, Shield Colour, and Icon Colour.
-                    planetChanger(planet,
-                            "partialecumenopolis",
-                            "Lesser Ecumenopolis",
-                            "graphics/planets/AA_ecumenopolis.jpg",
-                            "graphics/planets/AA_partialEcumLights.png",
-                            new Color(255,255,255,255),
-                            "graphics/planets/clouds_banded01.png",
-                            new Color(220,190,160,180), 0.1f, 40, -5,
-                            new Color(150,150,145,130),
-                            null, null, null,
-                            new Color(140,140,140,255));
-
+                        planetChanger(planet,
+                                "fullecumenopolis",
+                                "Ecumenopolis",
+                                "graphics/planets/AA_fullEcumenopolis.jpg",
+                                "graphics/planets/AA_ecumenopolisLights.png",
+                                new Color(255, 255, 255, 255),
+                                "graphics/planets/clouds_banded01.png",
+                                new Color(140, 140, 160, 180), 0.1f, 60, -5,
+                                new Color(140, 140, 160, 130),
+                                null, null, null,
+                                new Color(140, 120, 170, 255));
+                    }
                 }
-            }
 
-            // Full Ecumenopolis
-            // A city spanning the world, every trace of nature is paved over for human expansion.
-            else if (market.getSize() >= 13 && market.getSize() <= 14) {
-                if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_fullEcumenopolis.jpg")) {
-                    //log.debug("Already has Ecumenopolis texture, not changing.");
-                    break;
+                // Hyperspacial Ecumonopolis
+                // With so many people, this Ecumonopolis has begun to expand into Hyperspace to supply the needed living space.
+                else if (market.getSize() >= 15 && market.getSize() <= 17) {
+                    if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_hyperEcumenopolis.jpg")) {
+                        //log.debug("Already has Hyperspacial Ecumonopolis texture, not changing.");
+                        break;
+                    } else {
+                        log.debug("Changing to Hyperspacial Ecumenopolis");
+
+                        conditionsRemove(market);
+                        market.addCondition("AA_hyperspacial_ecumenopolis");
+                        market.addCondition("pollution");
+
+                        planetChanger(planet,
+                                "hyperecumenopolis",
+                                "Hyperspacial Ecumenopolis",
+                                "graphics/planets/AA_hyperEcumenopolis.jpg",
+                                "graphics/planets/AA_ecumenopolisLights.png",
+                                new Color(190, 150, 255, 255),
+                                "graphics/planets/clouds_banded01.png",
+                                new Color(114, 11, 234, 82), 0.1f, 80, -5,
+                                new Color(94, 28, 169, 147),
+                                "graphics/planets/AA_hyperspaceLeakage.png", 0.05f,
+                                new Color(255, 255, 255, 255),
+                                new Color(75, 50, 100, 255));
+                    }
                 }
-                else {
-                    log.debug("Changing to Ecumenopolis");
 
-                    conditionsRemove(market);
-                    market.addCondition("AA_ecumenopolis");
-                    market.addCondition("pollution");
+                // Matrioshka World
+                // A world of multiple layers, many never seeing the natural light of day.
+                else if (market.getSize() >= 18 && market.getSize() <= 20) {
+                    if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_matrioshka.jpg")) {
+                        //log.debug("Already has Matrioshka texture, not changing.");
+                        break;
+                    } else {
+                        log.debug("Changing to Matrioshka World");
 
-                    planetChanger(planet,
-                            "fullecumenopolis",
-                            "Ecumenopolis",
-                            "graphics/planets/AA_fullEcumenopolis.jpg",
-                            "graphics/planets/AA_ecumenopolisLights.png",
-                            new Color(255,255,255,255),
-                            "graphics/planets/clouds_banded01.png",
-                            new Color(140,140,160,180),0.1f, 60, -5,
-                            new Color(140,140,160,130),
-                            null, null, null,
-                            new Color(140,120,170,255));
+                        conditionsRemove(market);
+                        market.addCondition("AA_matrioshka_world");
+
+                        planetChanger(planet,
+                                "matrioshkaworld",
+                                "Matrioshka",
+                                "graphics/planets/AA_hyperEcumenopolis.jpg",
+                                "graphics/planets/AA_ecumenopolisLights.png",
+                                new Color(190, 150, 255, 255),
+                                "graphics/planets/AA_matrioshkaLayer.png",
+                                // Since the layer is ACTUALLY solid, it needs to have 255 in everything.
+                                new Color(255, 255, 255, 255), 0.1f, 80, 2,
+                                new Color(20, 110, 230, 200),
+                                "graphics/planets/AA_matrioshkaLayer2.png", 0.15f,
+                                new Color(255, 255, 255, 255),
+                                new Color(6, 61, 119, 255));
+                    }
                 }
-            }
 
-            // Hyperspacial Ecumonopolis
-            // With so many people, this Ecumonopolis has begun to expand into Hyperspace to supply the needed living space.
-            else if (market.getSize() >= 15 && market.getSize() <= 17) {
-                if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_hyperEcumenopolis.jpg")) {
-                    //log.debug("Already has Hyperspacial Ecumonopolis texture, not changing.");
-                    break;
-                }
-                else {
-                    log.debug("Changing to Hyperspacial Ecumenopolis");
+                // Astral Singularity
+                // And God said, Let there be light: and there was light.
+                // And God saw the light, and it was good, and God divided the light from the darkness.
+                else if (market.getSize() >= 21) {
+                    if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_astralSingularity.jpg")) {
+                        //log.debug("Already has Astral texture, not changing.");
+                        break;
+                    } else {
+                        log.debug("Changing to Astral World");
 
-                    conditionsRemove(market);
-                    market.addCondition("AA_hyperspacial_ecumenopolis");
-                    market.addCondition("pollution");
+                        conditionsRemove(market);
+                        market.addCondition("AA_astral_world");
 
-                    planetChanger(planet,
-                            "hyperecumenopolis",
-                            "Hyperspacial Ecumenopolis",
-                            "graphics/planets/AA_hyperEcumenopolis.jpg",
-                            "graphics/planets/AA_ecumenopolisLights.png",
-                            new Color(190, 150, 255,255),
-                            "graphics/planets/clouds_banded01.png",
-                            new Color(114, 11, 234, 82),0.1f,80, -5,
-                            new Color(94, 28, 169, 147),
-                            "graphics/planets/AA_hyperspaceLeakage.png", 0.05f,
-                            new Color(255, 255, 255,255),
-                            new Color(75,50,100,255));
-                }
-            }
-
-            // Matrioshka World
-            // A world of multiple layers, many never seeing the natural light of day.
-            else if (market.getSize() >= 18 && market.getSize() <= 20) {
-                if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_matrioshka.jpg")) {
-                    //log.debug("Already has Matrioshka texture, not changing.");
-                    break;
-                }
-                else {
-                    log.debug("Changing to Matrioshka World");
-
-                    conditionsRemove(market);
-                    market.addCondition("AA_matrioshka_world");
-
-                    planetChanger(planet,
-                            "matrioshkaworld",
-                            "Matrioshka",
-                            "graphics/planets/AA_hyperEcumenopolis.jpg",
-                            "graphics/planets/AA_ecumenopolisLights.png",
-                            new Color(190, 150, 255,255),
-                            "graphics/planets/AA_matrioshkaLayer.png",
-                            // Since the layer is ACTUALLY solid, it needs to have 255 in everything.
-                            new Color(255, 255, 255,255),0.1f,80, 2,
-                            new Color(20, 110, 230,200),
-                            "graphics/planets/AA_matrioshkaLayer2.png", 0.15f,
-                            new Color(255, 255, 255,255),
-                            new Color(6, 61, 119,255));
-                }
-            }
-
-            // Astral Singularity
-            // And God said, Let there be light: and there was light.
-            // And God saw the light, and it was good, and God divided the light from the darkness.
-            else if (market.getSize() >= 21) {
-                if (Objects.equals(planet.getSpec().getTexture(), "graphics/planets/AA_astralSingularity.jpg")) {
-                    //log.debug("Already has Astral texture, not changing.");
-                    break;
-                }
-                else {
-                    log.debug("Changing to Astral World");
-
-                    conditionsRemove(market);
-                    market.addCondition("AA_astral_world");
-
-                    planetChanger(planet,
-                            "astralworld",
-                            "Astral",
-                            "graphics/planets/AA_astral.jpg",
-                            "graphics/planets/AA_astralStars.png",
-                            new Color(255,255,255,255),
-                            "graphics/planets/AA_astralStars.png",
-                            new Color(255, 255, 255,255),0.2f,120, 5,
-                            new Color(255, 255, 255,255),
-                            "graphics/planets/AA_astralStars.png", 0.05f,
-                            new Color(255,255,255,255),
-                            new Color(30, 23, 42, 255));
+                        planetChanger(planet,
+                                "astralworld",
+                                "Astral",
+                                "graphics/planets/AA_astral.jpg",
+                                "graphics/planets/AA_astralStars.png",
+                                new Color(255, 255, 255, 255),
+                                "graphics/planets/AA_astralStars.png",
+                                new Color(255, 255, 255, 255), 0.2f, 120, 5,
+                                new Color(255, 255, 255, 255),
+                                "graphics/planets/AA_astralStars.png", 0.05f,
+                                new Color(255, 255, 255, 255),
+                                new Color(30, 23, 42, 255));
+                    }
                 }
             }
         }
